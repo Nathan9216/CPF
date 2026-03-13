@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gerador e Validador de CPF</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Gerador de CPF</h1>
+
+    <div class="actions">
+      <button id="gerar">Gerar CPF válido</button>
+      <button id="gerar-mascara">Gerar com máscara</button>
+    </div>
+
+    <div class="result">
+      <input type="text" id="cpf-gerado" readonly placeholder="CPF aparecerá aqui"/>
+      <button id="copiar">Copiar</button>
+    </div>
+
+    <hr>
+
+    <h2>Validar CPF</h2>
+    <input type="text" id="cpf-input" placeholder="Digite o CPF (com ou sem máscara)" maxlength="14"/>
+    <button id="validar">Validar</button>
+
+    <div id="resultado-validacao" class="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
